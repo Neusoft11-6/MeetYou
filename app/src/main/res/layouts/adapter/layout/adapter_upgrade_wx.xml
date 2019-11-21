@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+        style="@style/upgradeOption"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="微信帐号"
+            android:textColor="@color/gray"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+
+            <TextView
+                android:id="@+id/wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20px"
+                android:text="微信"
+                android:textColor="@color/qmui_config_color_gray_5"
+                android:textSize="12sp" />
+
+            <com.qmuiteam.qmui.alpha.QMUIAlphaTextView
+                android:id="@+id/copy"
+                android:layout_width="120px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_solid_gray"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="复 制"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+
+</FrameLayout>
+

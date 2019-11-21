@@ -1,0 +1,102 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+//    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+//        versionCode rootProject.ext.android["versionCode"]
+//        versionName rootProject.ext.android["versionName"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api(rootProject.ext.dependencies["support-v4"]) {
+        exclude module: 'support-annotations'
+    }
+    api(rootProject.ext.dependencies["appcompat-v7"]) {
+        exclude module: 'support-annotations'
+        exclude module: 'support-v4'
+    }
+    api rootProject.ext.dependencies["annotations"]
+    api (rootProject.ext.dependencies["okhttp3"]){
+        exclude module: 'okio'
+    }
+
+    //view
+    api(rootProject.ext.dependencies["autolayout"]) {
+        exclude group: 'com.android.support'
+    }
+    api(rootProject.ext.dependencies["butterknife"]) {
+        exclude module: 'support-annotations'
+    }
+
+    api(rootProject.ext.dependencies["glide"]) {
+        exclude module: 'support-v4'
+    }
+    annotationProcessor(rootProject.ext.dependencies["glide-compiler"]) {
+        exclude module: 'jsr305'
+    }
+    api rootProject.ext.dependencies["vlayout"]
+    api rootProject.ext.dependencies["commonAdapter"]
+
+    api(rootProject.ext.dependencies["rxlifecycle"]) {
+        exclude module: 'rxjava'
+        exclude module: 'rxandroid'
+        exclude module: 'jsr305'
+    }
+
+//    api(rootProject.ext.dependencies["rxbinding2"]) {
+//        exclude module: 'rxjava'
+//        exclude module: 'rxandroid'
+//        exclude module: 'jsr305'
+//    }
+    api(rootProject.ext.dependencies["rxlifecycle-components"]) {
+        exclude module: 'rxjava'
+        exclude module: 'rxandroid'
+        exclude module: 'jsr305'
+    }
+    api ("cn.bmob.android:bmob-sdk:3.5.9"){
+        exclude module: 'okhttp'
+    }
+    //bmob-push：Bmob的推送包
+//    api 'cn.bmob.android:bmob-push:0.8'
+    api rootProject.ext.dependencies["androideventbus"]
+
+    api 'com.qmuiteam:qmui:1.1.0'
+
+    api(rootProject.ext.dependencies["bottom-navigation-bar"]) {
+        exclude module: 'design'
+        exclude module: 'appcompat-v7'
+    }
+    api rootProject.ext.dependencies["dagger2"]
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+    api rootProject.ext.dependencies["logger"]
+    api rootProject.ext.dependencies["baseRecyclerViewAdapter"]
+    api project(':imagelibrary')
+//    api  'com.sackcentury:shinebutton:0.2.0'
+//    api 'com.ycjiang:ImagePreview:2.1.2'
+
+}

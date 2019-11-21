@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_topbar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40px"
+        android:src="@mipmap/ic_meetyou" />
+
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="30px"
+        android:hint="输入用户名"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/passWord"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="20px"
+        android:hint="输入密码"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+    <com.qmuiteam.qmui.alpha.QMUIAlphaTextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/bg_solid_gray"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="60px"
+        android:text="注:\n为避免没必要的麻烦，\n请牢记用户名和密码！"
+        android:textColor="@color/qmui_config_color_gray_5"
+        android:textSize="12sp" />
+</LinearLayout>

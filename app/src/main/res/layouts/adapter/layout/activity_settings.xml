@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_topbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+            android:id="@+id/layoutClear"
+            style="@style/minePageOption"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_margin="30px"
+            android:padding="30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="清理缓存"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/cacheCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                tools:text="45m" />
+
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+            android:id="@+id/layoutLogout"
+            style="@style/minePageOption"
+            app:qmui_backgroundColor = "@color/pink"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="120px"
+            android:layout_margin="30px"
+            android:padding="30px">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textColor="@color/qmui_config_color_white"
+                android:textSize="16sp" />
+
+
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

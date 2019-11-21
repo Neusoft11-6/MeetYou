@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.alpha.QMUIAlphaRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="400px"
+    android:clickable="true"
+    android:padding="20px">
+
+    <!--<com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout-->
+    <!--app:qmui_borderWidth="0dp"-->
+    <!--app:qmui_radiusBottomLeft="10dp"-->
+    <!--app:qmui_backgroundColor="#cfff6686"-->
+    <!--app:qmui_radiusBottomRight="10dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:qmui_border_width="0dp"
+        app:qmui_corner_radius="10dp"
+        app:qmui_is_circle="false"
+        app:qmui_is_oval="false" />
+    <!--</com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>-->
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_alignParentBottom="true"
+        app:qmui_backgroundColor="#cfff6686"
+        app:qmui_borderWidth="0dp"
+        app:qmui_radiusBottomLeft="10dp"
+        app:qmui_radiusBottomRight="10dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/galleryNum"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="15px"
+            android:paddingRight="10px"
+            android:textColor="@color/qmui_config_color_white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/galleryNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/ic_gallery_more"
+            android:gravity="center_vertical"
+            android:text="18"
+            android:textColor="@color/qmui_config_color_white"
+            android:textSize="13sp" />
+    </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+</com.qmuiteam.qmui.alpha.QMUIAlphaRelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_topbar" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+        style="@style/minePageOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40px">
+
+        <EditText
+            android:id="@+id/editCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="输入兑换码"
+            android:maxHeight="100dp"
+            android:minHeight="50dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/qmui_config_color_gray_3"
+            android:textSize="13sp" />
+    </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+    <com.qmuiteam.qmui.alpha.QMUIAlphaTextView
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/bg_solid_gray"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="兑  换"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</LinearLayout>

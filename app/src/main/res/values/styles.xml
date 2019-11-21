@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimaryDark">@color/darkGray</item>
+        <item name="colorAccent">@color/pink</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="QMUITopBarStyle">@style/MeetYouTopBar</item>
+
+
+    </style>
+    <style name="MeetYouTopBar" parent="QMUI.TopBar">
+        <item name="qmui_topbar_left_back_drawable_id">@mipmap/ic_back_n</item>
+        <item name="qmui_topbar_text_btn_color_state_list">@color/pink</item>
+    </style>
+
+    <style name="fullscreenTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+
+        <item name="android:windowIsTranslucent">false</item>
+        <!--<item name="android:windowDisablePreview">true</item>-->
+    </style>
+
+    <style name="minePageOption" >
+        <item name="qmui_backgroundColor">@color/qmui_config_color_white</item>
+        <item name="qmui_borderWidth">1dp</item>
+        <item name="qmui_borderColor">#f1f1f1</item>
+        <item name="qmui_radius">10dp</item>
+    </style>
+
+    <style name="upgradeOption" >
+        <item name="qmui_backgroundColor">@color/qmui_config_color_white</item>
+        <item name="qmui_borderWidth">1dp</item>
+        <item name="qmui_borderColor">#f1f1f1</item>
+        <item name="qmui_radius">5dp</item>
+    </style>
+</resources>

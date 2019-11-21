@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutSettings"
+    style="@style/minePageOption"
+    android:layout_width="match_parent"
+    android:layout_height="120px"
+    android:padding="30px">
+
+    <TextView
+        android:id="@+id/optionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@mipmap/ic_settings"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="设置"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+</com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>

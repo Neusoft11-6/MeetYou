@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_topbar" />
+    <include layout="@layout/layout_recyclerview"></include>
+   <!--<include layout="@layout/layout_on_login"></include>-->
+   <!--<include layout="@layout/layout_user_info"></include>-->
+   <!--<include layout="@layout/layout_my_likes"></include>-->
+    <!--<include layout="@layout/layout_transform"></include>-->
+    <!--<include layout="@layout/layout_settings"></include>-->
+
+</LinearLayout>

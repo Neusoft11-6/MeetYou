@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fixed_label_active">12sp</dimen>
+    <dimen name="fixed_label_inactive">12sp</dimen>
+
+</resources>
